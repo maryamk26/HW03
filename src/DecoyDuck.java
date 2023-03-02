@@ -1,12 +1,16 @@
-public class DecoyDuck extends Duck{
+public class DecoyDuck extends Duck {
 
-    @Override
-    public void swim() {
+    public DecoyDuck() {
+        quackBehaviour = new MuteQuack();
+        flyBehaviour = new FlyNoWay();
+    }
+
+    public void display() {
         System.out.println("IT DOESN'T EXIST");
     }
 
     @Override
-    public void display() {
-        System.out.println("IT DOESN'T EXISTTT");
+    public void swim() {
+        System.out.println("NOTHING IS HERE(((");
     }
 }

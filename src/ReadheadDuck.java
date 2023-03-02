@@ -1,26 +1,13 @@
-public class ReadheadDuck extends Duck implements Flyable,Quackable{
+public class ReadheadDuck extends Duck {
 
+    public ReadheadDuck() {quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
+    public void display() {
+        System.out.println("OHHH! RED-HEADDD DUCKKKK!!!");
+    }
     @Override
     public void swim() {
-        System.out.println("THE DUCK SWIMS");
-    }
-
-    @Override
-    public void quack() {
-        System.out.println("QUACK QUACKKK");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("THE DUCK FLIES");
-    }
-
-    @Override
-    public void display() {
-        System.out.println("IT'S A READ-HEAD DUCK");
+        System.out.println("LOOK!! IT'S SWIMMINGGGGG");
     }
 }
-
-
-
-
