@@ -12,7 +12,6 @@ public class Main {
         RHDUCK.swim();
         RubberDuck RUBBDUCK = new RubberDuck();
         RUBBDUCK.display();
-        RUBBDUCK.fly();
         RUBBDUCK.quack();
         RUBBDUCK.swim();
     }

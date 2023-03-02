@@ -1,4 +1,4 @@
-public class MallardDuck extends Duck {
+public class MallardDuck extends Duck implements Flyable,Quackable {
 
     @Override
     public void swim() {
